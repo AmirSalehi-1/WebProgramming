@@ -1,0 +1,104 @@
+<!-- Name:Amir Salehi -->
+<!-- Date: Feb 1 2023 -->
+<!-- Section: CST 8285 section 313-->
+<!-- lab Number 2 -->
+<!-- File :customer.html-->
+<!-- lab objective : to create html correctly -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" author" content=" Amir Salehi">
+    <meta name=" description" content=" lab 2">
+    <meta name=" keywords" content=" form,get,post">
+
+    <title> Regstration Form </title>
+</head>
+
+<body>
+    <fieldset>
+        <h1 style="color:black ;">
+
+            Customer registration
+        </h1>
+        <form action="process.php" method="get" enctype="text/plain">
+            <fieldset>
+                <legend>1.user Info</legend>
+                <label for="nom"> first name</label>
+                <input type="text" id="nom" name="name" maxlength="10">
+
+
+                <label for="lastname1">last name</label>
+                <input type="text" id="lastname1" name="lastname" readonly> <br><br>
+                <label for="email1"> Email:</label><br>
+                <input type="email" id="email1" name="email1" placeholder="format for email is xxx@yyy.zzz" size="50" required>
+                <br><br>
+                <label for="password1"> password:</label>
+                <input type="password" id="password1" name="password" minlength="8" placeholder="at least  8 characters"
+                    required>
+                <label for="password2"> password repeat:</label>
+                <input type="password" id="password2" name="password" minlength="8" placeholder="at least  8 characters"
+                    required> <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>2.Locations</legend>
+                <label for="Address">Address:</label><br><br>
+                <input type="text" id="Address" name="Address" required> <br>
+                <label for="City">City:</label><br><br>
+                <input type="text" id="City" name="City" required> <br>
+                <label for="State">State:</label><br><br>
+                <input type="text" id="State" name="State" required> <br>
+                <label for="zip">zip:</label><br><br>
+                <input type="number" id="zip" name="zip" required> <br>
+                <label for="phone">Phone:</label><br><br>
+                <input type="number" id="phone" name="phone" placeholder="NNN-NNN-NNN" required> <br>
+                <label for="country">country:</label>
+                <select name="country" id="country" multiple size="1">
+                    <option value="canada"> canada </option>
+                    <option value="USA">USA </option>
+                    <option value="Iran"> Iran</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="UAE">UAE</option>
+                    <option value="India">India</option>
+                </select><br><br>
+
+                <label for="NorthAmerica">Continent</label><br>
+                <input type="radio" id="NorthAmerica" name="Continent" value="Continent">
+                <label for="NorthAmerica">North america</label><br>
+
+                <input type="radio" id="Europe" name="Continent" value="Europe">
+                <label for="Europe">Europe</label><br>
+
+                <input type="radio" id="SouthAmerica" name="Continent" value="South america">
+                <label for="SouthAmerica">South america</label><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>3.Personal details</legend> <br>
+
+                <label for="BirthDay"> Birth Day</label><br>
+
+                <input type="date" id="BirthDay" name="Birth Date">
+
+                <label for="color">Favorite color </label>
+                <input type="color" name="color" id="color" value="#1F1F1F"><br><br>
+
+                <label for="art">Interet In Art </label> <br>
+                <p> minimal <input type="range" id="art" name="art">love it</p>
+            </fieldset>
+            <h2>4.All done </h2>
+
+
+            <input type="checkbox" id="agree" name="agree" value="terms" required>
+            <label for="agree"> I agree to the <a href="https://www.google.com"> Terms of the site </a> </label><br>
+            <button type="submit"> Submit</button>
+            <button type="reset"> Reset</button>
+        </form>
+        <p> 2023 CopyRight</p>
+    </fieldset>
+</body>
+
+</html>
