@@ -1,0 +1,166 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(240, 240, 240, 0.767);
+  background-size: cover;
+
+  background-position: center;
+  color: #000000;
+  font-size: medium;
+
+}
+
+h1 {
+  color: rgb(55, 36, 99);
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+h2 {
+  font-size: x-large;
+  color: rgb(14, 7, 229);
+  text-align: center;
+
+  border-top: 1px solid #0f0e0e;
+  padding-top: 20px;
+}
+
+h3 {
+  border-top: 1px solid #0f0e0e;
+  padding-top: 20px;
+  font-size: x-large;
+
+  text-align: center;
+  color: rgb(14, 7, 229);
+}
+
+h4 {
+  border-top: 1px solid #0f0e0e;
+  padding-top: 20px;
+  font-size: x-large;
+
+  text-align: center;
+  color: rgb(14, 7, 229);
+}
+.link {
+  text-align: center;
+}
+.link a {
+  font-size: x-large;
+  color: rgb(0, 0, 2);
+  padding: 4dvw;
+  font-style: italic;
+  font-weight: bold;
+}
+p:first-of-type {
+  font-weight: bold;
+  font-size: x-large;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b0969;
+  padding: 10px;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: auto;
+}
+
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: larger;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.animated-text h2 {
+  transform: translateY(100px);
+  transform: rotate(-360deg);
+  animation: appear 4s ease-in forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 100;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 10;
+    transform: translateY(0);
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  font-size: x-large;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-bottom: 30px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.coding {
+  float: right;
+  width: 50%;
+  margin: 10px;
+}
+.stretched-image {
+  margin-left: 20vh;
+  width: 27vmax;
+  height: auto;
+}
+
+.img {
+  background-color: #333;
+  color: #fff;
+  height: auto;
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+footer {
+  padding-top: 20px;
+  bottom: 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: auto;
+}
+.footer-author {
+  padding: 10px;
+  background-color: #0b0969;
+  color: #fff;
+}
+footer a{
+  color: #121212;
+}

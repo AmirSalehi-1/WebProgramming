@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(240, 240, 240, 0.767);
+  background-size: cover;
+  background-position: center;
+  color: #0f0f11;
+  font-size: medium;
+}
+
+label[for="search-input"],
+label[for="level-select"],
+label[for="sort-select"],
+button#search-button,
+button#filter-button,
+button#sort-button {
+  font-size: 1.2rem;
+}
+h1 {
+  color: rgb(55, 36, 99);
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+.course img {
+  display: block;
+  margin: auto;
+}
+.course p {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.5em;
+}
+.level {
+  font-size: 1em;
+  font-weight: bold;
+}
+.code {
+  font-size: 1em;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b0969;
+  padding: 10px;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: auto;
+}
+
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: larger;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+h1 {
+  font-size: 2em;
+}
+p {
+  font-size: 1em;
+}
+
+.img {
+  background-color: #333;
+  color: #fff;
+  height: auto;
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+footer {
+  padding-top: 20px;
+  bottom: 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: auto;
+}
+.footer-author {
+  padding: 10px;
+  background-color: #0b0969;
+  color: #fff;
+}
+footer a{
+    color: #121212;
+  }

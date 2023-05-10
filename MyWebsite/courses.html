@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="author" content="Amir Salehi" >
+    <link rel="stylesheet" type="text/css" href="style3.css" >
+    <script src="course.js" defer></script>
+    <title>Course List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="Top">
+        <h1>
+          <img src="banner.png" class="img" alt="Amir" width="11" height="10" >
+        </h1>
+        <nav>
+          <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="Resume.html">Resume</a>
+            <a href="courses.html">Courses</a>
+          </div>
+          <div class="nav-right">
+            <button onclick="myFunction2();">contact me</button>
+          </div>
+        </nav>
+      </section>
+
+      <header>
+        <h2>Course List</h2>
+        <div class="search">
+          <label for="search-input">Search:</label>
+          <input type="text" id="search-input" >
+          <button id="search-button">Go</button>
+        </div>
+        <div class="filters">
+          <label for="level-select">Filter by level:</label>
+          <select id="level-select">
+            <option value="all">All levels</option>
+            <option value="level 1">level 1</option>
+            <option value="level 2">level 2</option>
+          </select>
+          <button id="filter-button">Go</button>
+        </div>
+        <div class="sort">
+          <label for="sort-select">Sort by level:</label>
+          <select id="sort-select">
+            <option value="asc">Lowest to highest</option>
+            <option value="desc">Highest to lowest</option>
+          </select>
+          <button id="sort-button">Go</button>
+        </div>
+      </header>
+      <main>
+        <div class="course-list">
+          <div class="course-row">
+            <div class="course">
+              <img
+                src="1.png"
+                alt="Intro to Computer Programming"
+                width="700"
+                height="300"
+              >
+              <h2>
+                22F_CST8116_340_341_342_343 Intro to Computer Programming-java
+              </h2>
+              <p>
+                Learn the basics of Java programming in this introductory
+                course.
+              </p>
+              <span class="level">Level 1</span>
+              <span class="code">CST8116</span>
+            </div>
+            <div class="course">
+              <img src="2.png" alt="Data base" width="700" height="300" >
+              <h2>22F_CST8215_340_341_342_343 Introduction to database</h2>
+              <p>learning database</p>
+              <span class="level">level 1</span>
+              <span class="code">CST8215</span>
+            </div>
+            <div class="course">
+              <img
+                src="3.png"
+                alt="computer essentials"
+                width="700"
+                height="300"
+              >
+              <h2>22F_CST8101_341 Computer Essentials</h2>
+              <p>learning essentials of computer.</p>
+              <span class="level">level 1</span>
+              <span class="code">CST8101</span>
+            </div>
+          </div>
+          <div class="course-row">
+            <div class="course">
+              <img src="4.png" alt="math" width="700" height="300" >
+              <h2>22F_MAT8001C_050 Tech Math for Computer Science</h2>
+              <p>Learn basics of Math.</p>
+              <span class="level">leve 1</span>
+              <span class="code">MAT8001C</span>
+            </div>
+            <div class="course">
+              <img src="5.png" alt="communication" width="700" height="300" >
+              <h2>22F_ENL1813T_020 Communications I</h2>
+              <p>learn communication skills</p>
+              <span class="level">level 1</span>
+              <span class="code">ENL1813T</span>
+            </div>
+            <div class="course">
+              <img
+                src="6.png"
+                alt="Acchivieng success"
+                width="700"
+                height="300"
+              >
+              <h2>22F_CST8300_308 Achieving Success in Changing Envir</h2>
+              <p>learning syccessful skills</p>
+              <span class="level">level 1</span>
+              <span class="code">CST8300</span>
+            </div>
+
+            <div class="course">
+              <img
+                src="7.png"
+                alt="Achieving success"
+                width="700"
+                height="300"
+              >
+              <h2>
+                23W_CST8284_310_311_312_313_314 Object Oriented Programming
+                (Java)
+              </h2>
+              <p>learning Java at level2</p>
+              <span class="level">level 2</span>
+              <span class="code">CST8284</span>
+            </div>
+            <div class="course">
+              <img src="8.png" alt="java2 " width="700" height="300" >
+              <h2>23W_CST8285_310_311_312_313_314 Web Programming</h2>
+              <p>learning how to program a website</p>
+              <span class="level">level 2</span>
+              <span class="code">CST8285</span>
+            </div>
+            <div class="course">
+              <img src="9.png" alt="web programming" width="700" height="300" >
+              <h2>
+                23W_CST8102_330_331_332_333_334 Operating Systems Fund
+                (GNU/Linux)
+              </h2>
+              <p>learning Linux SKILLS</p>
+              <span class="level">level 2</span>
+              <span class="code">CST8102</span>
+            </div>
+            <div class="course">
+              <img src="10.png" alt="linux" width="700" height="300" >
+              <h2>23W_ENL2019T_311 Technical Comm. for Eng. Technology</h2>
+              <p>learning communication SKILLS in advaned level</p>
+              <span class="level">level 2</span>
+              <span class="code">ENL2019T</span>
+            </div>
+            <div class="course">
+              <img src="11.png" alt="sense of humor" width="700" height="300" >
+              <h2>23W_GED6022_380 A Sense of Humour</h2>
+              <p>learning Humor SKILLS</p>
+              <span class="level">level 2</span>
+              <span class="code">GED6022</span>
+            </div>
+            <div class="course">
+              <img src="12.png" alt="humor skills" width="700" height="300" >
+              <h2>23W_CST2355_300_301_302_303_304 Database</h2>
+              <p>learning database advanced level</p>
+              <span class="level">level 2</span>
+              <span class="code">CST2355</span>
+            </div>
+            <div class="course">
+              <img
+                src="13.png"
+                alt="Database Design"
+                width="700"
+                height="300"
+              >
+              <h2>23W_GEP1001_316 Cooperative Education</h2>
+              <p>readines for co op</p>
+              <span class="level">level 2</span>
+              <span class="code">GEP1001</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <a href="#Top" class="footer-topA">Top of Amir's page</a>
+        <div class="footer-author">Formatting and code by Amir Salehi</div>
+      </footer>
+    </div>
+  </body>
+</html>
