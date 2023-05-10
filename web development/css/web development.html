@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="add your name here">
+    <title>lab03</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body>
+    <header>
+        <section id="Top">
+            <h1>CSS For Web Development</h1>
+        </section>
+        <nav>
+
+            <a href="#Style">How a Style Sheet Work</a>
+            <a href="#Cascade">The Order of the Cascade </a>
+            <a href="#Anatomy">The Anatomy of a Selector </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Where Does CSS Come From?</h2>
+
+        <p> The idea of style sheets is as old as standardized general markup languages. Cascading
+            Style Sheets, usually referred to as CSS, were initially proposed in 1994. This was
+            during the times of the browser wars and CSS was the least consistently rendered
+            language for the browsers. Opera was an early almost perfect adopter, but the W3
+            Consortium were trying to create a standard with buy in from the more popular browsers
+            Internet Explorer and Netscape. As CSS became standardized web browsers began to improve
+            their support and today most modern browsers support CSS in a fairly consistent manner.
+            The HTML5 standard has eliminated much of its design formatting features and offloaded
+            that work to the CSS standard. HTML5 expects you to use CSS to make your pages look good.
+            This is because HTML was always great at describing documents, but often terrible at
+            making them look really great. And making webpages look great is where CSS shines.</p>
+
+        <p>CSS easily lets you build stylesheets for whole websites so you can make changes to
+            your corporate identity in one place instead of having to touch every file in your website.
+            If you decide to move all your website backgrounds to blue from brown, no problem! Just
+            modify and publish that master style sheet CSS file and you are done.</p>
+
+        <section id="Style">
+            <h3>How a Style Sheet Works</h3>
+
+            <img src="waterfall-free-from-pixabay.jpg" class="waterfall" alt="watergfll-image">
+
+
+            <p>The word cascade is used to describe how CSS works and here should remind you of a
+                waterfall. The water falls down and hits the various ledges until it looks a certain
+                way. Waterfalls are beautiful, so it is a fitting metaphor for making the web a beautiful
+                place. </p>
+
+            <p> This idea of a waterfall effect is what Håkon Wium Lie, the inventor of CSS and chief
+                technical officer for Opera, intended for us to think about when he proposed CSS in 1994.
+                In CSS we can have many different style rules ranging from general to very specific,
+                and often it is the last, most specific rule that will take precedence over how the
+                browser will display the web page content. Think of it like this: we wash the styles
+                over the document until it looks just the way we want it too. While Håkon Lie called
+                this process of styling the webpage the cascade, others have called it the war of
+                the styles. </p>
+        </section>
+        <section id="Cascade">
+            <h4>The Order of the Cascade</h4>
+
+            <p>Understanding the rules of the cascade are important. Often when students have
+                unexpected results from CSS it is because they do not understand how CSS decides what
+                style rule wins in a given situation. </p>
+
+            <blockquote>
+                <p class="quotation">When two elements have the same specificity value then the declaration that comes
+                    last in the source code wins.</p>
+
+                <p>There are three levels of priority in the evaluation of the CSS cascade: <i>Origin and
+                        Importance</i>, <i>Specificity of the Selector</i>, <i>Order of Appearance</i>, and
+                    <i>Inheritance</i>. Each of these priority levels has different rules as to how they
+                    are evaluated, but when we have a rule that clearly wins at a level then it is applied
+                    to the webpage, otherwise the next level is evaluated. This is why sometimes you add
+                    a style rule and it seems to make no change to your webpage, something with a greater
+                    priority has applied its rule first.
+                </p>
+
+            </blockquote>
+            <ul>
+                <li id="origin">Origin and Importance</li>
+
+
+                <li>Origin has to do with where the style rule originates. This allows the browers and
+                    even the end user to make design decisions based on their needs, which is helpful
+                    for greater accessibility in web browsing. You can include an important operator (!)
+                    to a style rule to override the origin priority. Note that all browsers have default
+                    style rules which have the lowest priority at this level unless they are given an
+                    important operator (!) which will give them the highest priority.</li>
+
+                <li>Specificity of the Selector</li>
+            </ul>
+            <ol>
+                <li> Selector specificity has to do with how specific our selector is. A selector on a
+                    generic HTML tag has the lowest priority here. The order of preference for selector
+                    specificity is:
+            </ol>
+
+
+            <ol>
+                <li>
+                    Inline style rules that are part of the HTML tag (style= attribute). These
+                    are the most specific because they only apply to the element to which they
+                    are attached.
+                </li>
+                <li>
+                    Identifier (id=) selectors which use the # symbol in CSS. Because these are
+                    meant to be unique identifiers they are the next most specific way to select
+                    an element.
+                </li>
+                <li>
+                    Class, pseudo-class, and attribute identifiers are the next
+                    level of specificity. A class can reference many elements so it is less
+                    specific than an id= attribute. I can also reference states of an element like
+                    hover (:hover) or find an element that has an attribute with a specific value
+                    like type="checkbox".
+                </li>
+                <li>
+                    The least specific selector is the generic HTML tag name and pseudo-elements
+                    based on these tag names like div::first-line which targets just the first line
+                    of a div element. </li>
+
+            </ol>
+
+            <ul>
+
+                <li id="appereance">Oder of Appearance</li>
+
+                <li> The order in which you include your CSS style sheets is really important. The rule is
+                    that the last declaration, closest to the element selected, wins the war of styles. This
+                    is why inline CSS is discouraged, as it is always going to override other style declarations
+                    and if you need to make a change inline declarations are the hardest to locate. Also if you
+                    are to employ a CSS reset, to clear out unwanted CSS declarations, always include that link
+                    before your custom CSS link or you will simply reset all the work you have done.</li>
+
+                <li>Inheritance</li>
+
+                <li> Inheritance in CSS has to do with the fact that elements are often nested within other
+                    elements. We call the elements inside children of the parent elements. A child can often
+                    inherit style rules from its parent, although this is of lowest priority so CSS allows
+                    you to force this by setting a style rule to the value inherit. </li>
+
+            </ul>
+
+        </section>
+
+        <section id="Anatomy">
+
+            <h5>The Anatomy of a Selector </h5>
+
+            <ul>
+                <li> In CSS the selector is how we apply a style rule to a specific part of our webpage.
+                    Selectors dictate the specificity of our style rule. Selectors can be multiple, separated
+                    by commas as a list before the opening squiggly bracket ({) that indicates the start of a
+                    CSS rule block. If you separate a selector with a space it indicates that the second
+                    selector is a child of the first selector. For example, p em { font-weight: bold; }, would
+                    apply bold to the font of any em (emphasis) elements inside a p (paragraph) element, and
+                    this rule would not be applied to em (emphasis) elements that are not immediate children
+                    of p (paragraph) elements. Finally, selectors also have logical operators that allow us to
+                    target elements of our webpage with incredible specificity. </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href=" #top" class="footer-topA">Top of Article</a>
+        <p class="footer-author"> Formatting and code by Amir Salehi</p>
+    </footer>
+
+</html>

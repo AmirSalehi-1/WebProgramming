@@ -1,0 +1,115 @@
+body {
+    background: #DDD78D;
+    font-family: arial, san-serif;
+    font-size: 17px;
+}
+
+header {
+
+    background-color: #60594D;
+    color: #93A29B;
+    border: 4px solid #333;
+    color: #333;
+    padding: 10px;
+    font-size: 1vw;
+
+}
+
+footer {
+    background-color: #60594D;
+    color: #93A29B;
+    border: 4px solid #333;
+    color: #333;
+    padding: 10px;
+    font-size: 12pt;
+    text-align: center;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: left;
+    font-size: xx-large;
+}
+
+header nav a {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 30px;
+    color: black;
+    border-radius: 50px;
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #8B635C;
+}
+
+nav {
+    font-size: 12pt;
+}
+
+main h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    font-size: larger;
+}
+
+p:not(.quotation) {
+    font-size: 14pt;
+    text-align: left;
+    margin: 10px 0;
+}
+
+p.quotation {
+    background-color: #DCBF85;
+    text-align: center;
+    font-size: 14pt;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+
+
+
+.waterfall {
+    float: right;
+    width: 25%;
+    margin: 10px;
+}
+
+.footer-author {
+    text-align: left;
+    font-style: italic;
+    font-size: 10pt;
+    margin-top: 20px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 14pt;
+}
+
+
+
+
+#origin,
+#appereance {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    list-style-type: disc
+}
