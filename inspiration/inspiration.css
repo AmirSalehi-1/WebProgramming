@@ -1,0 +1,52 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+      background-image: url('college.jpg'); /*image [1]*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+  button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  #quote 
+  {
+    border: 15pt solid black;
+    border-radius: 15pt;
+    background-color: rgb(69, 181, 168);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+#first
+{
+  
+  border-radius: 15pt;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+font-style: oblique;
+font-weight: bold;
+font-size: larger;
+}
+#second{
+  font-style: italic;
+font-weight: bold;
+font-size: larger;
+float:right ;
+
+
+}
+  
+  button {
+    display: block;
+   margin: 0 auto;
+   background-color: rgb(128, 174, 125);
+  }
+
+  header h1 {
+    text-decoration: underline;
+    font-size: medium;
+ }
+
+ /*image [1] InsideOttawaValley.com website ,https://www.insideottawavalley.com/news-story/7600344-algonquin-college-prepares-for-possible-work-stoppage/ */
